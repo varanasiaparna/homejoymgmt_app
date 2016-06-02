@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  selectservice: MyString
+  payment: 1
+  address: MyString
+  numofworkers: 1
+  packages: 1
+  ratecard: 1
+
+two:
+  selectservice: MyString
+  payment: 1
+  address: MyString
+  numofworkers: 1
+  packages: 1
+  ratecard: 1

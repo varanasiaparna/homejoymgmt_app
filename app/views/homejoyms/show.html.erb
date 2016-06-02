@@ -1,0 +1,29 @@
+<%- model_class = Homejoym -%>
+<div class="page-header">
+  <h1><%=t '.title', :default => model_class.model_name.human.titleize %></h1>
+</div>
+
+<dl class="dl-horizontal">
+  <dt><strong><%= model_class.human_attribute_name(:selectservice) %>:</strong></dt>
+  <dd><%= @homejoym.selectservice %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:payment) %>:</strong></dt>
+  <dd><%= @homejoym.payment %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:address) %>:</strong></dt>
+  <dd><%= @homejoym.address %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:numofworkers) %>:</strong></dt>
+  <dd><%= @homejoym.numofworkers %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:packages) %>:</strong></dt>
+  <dd><%= @homejoym.packages %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:ratecard) %>:</strong></dt>
+  <dd><%= @homejoym.ratecard %></dd>
+</dl>
+
+<%= link_to t('.back', :default => t("helpers.links.back")),
+              homejoyms_path, :class => 'btn btn-default'  %>
+<%= link_to t('.edit', :default => t("helpers.links.edit")),
+              edit_homejoym_path(@homejoym), :class => 'btn btn-default' %>
+<%= link_to t('.destroy', :default => t("helpers.links.destroy")),
+              homejoym_path(@homejoym),
+              :method => 'delete',
+              :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) },
+              :class => 'btn btn-danger' %>

@@ -1,0 +1,2 @@
+module HomejoymsHelper
+end
